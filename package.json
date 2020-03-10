@@ -1,17 +1,24 @@
 {
   "name": "gitsemver",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Extract a semantic version number from a git repository’s HEAD",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "bin": {
+    "gitsemver": "dist/src/index.js"
+  },
+  "files": [
+    "dist/src",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jasmine",
     "lint": "eslint -c .eslintrc.js src/**.ts",
-    "prepack": "tsc && npm run test && npm run lint"
+    "prepack": "rm -rf dist && tsc && npm run test && npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Granjow/gitsemver.git"
+    "url": "https://github.com/Granjow/gitsemver.git"
   },
   "keywords": [
     "git",

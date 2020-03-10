@@ -1,5 +1,3 @@
-import { parseGitVersion } from './git-parser';
-
 const childProcess = require( 'child_process' );
 
 export const describeVersion = () : Promise<string> => new Promise( ( resolve, reject ) => {
@@ -15,12 +13,7 @@ export const describeVersion = () : Promise<string> => new Promise( ( resolve, r
 
     proc.on( 'close', ( exitCode : number ) => {
         if ( exitCode === 0 ) {
-            try {
-                const semver = parseGitVersion( stdout );
-                resolve( semver );
-            } catch ( e ) {
-                reject( e );
-            }
+            resolve( stdout );
         } else {
             reject( new Error( `git exited with exit code ${exitCode}: ${stderr}` ) );
         }

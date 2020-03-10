@@ -1,4 +1,4 @@
-const pad = ( nr : number ) => {
+const pad = ( nr : number ) : string => {
     return nr.toString( 10 ).padStart( 4, '0' );
 };
 
@@ -42,5 +42,5 @@ export const gitVersionToSemver = ( info : VersionInfo ) : string => {
     }
     const version = info.version || '0.0.0';
     const advance = pad( info.advance === undefined ? 0 : info.advance );
-    return `${version}-${advance}-${info.hash}`
+    return `${version}-${advance}-${info.hash}`;
 };

@@ -2,12 +2,12 @@
   "name": "gitsion",
   "version": "0.10.0",
   "description": "Extract a semantic version number from a git repository’s HEAD",
-  "main": "dist/src/index.js",
   "bin": {
-    "gitsion": "dist/src/index.js"
+    "gitsion": "dist/bin/gitsion.js"
   },
   "files": [
     "dist/src",
+    "dist/bin",
     "README.md"
   ],
   "scripts": {

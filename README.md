@@ -1,9 +1,11 @@
 # gitsion
 
-Get a version number for the current commit aka. `HEAD`.
+Get a version number for the current commit aka. `HEAD` which can be used for
+CI/CD pipelines to generate a unique version for every commit.
 
-The future goal of this module is to generate a version number according to [Semantic Versioning][semver].
-Currently, the requirements for getting a semantic version are:
+The future goal of this module is to generate a version number according to
+[Semantic Versioning][semver]. Currently, the requirements for getting a
+semantic version are:
 
 * Tags are in `v1.0.0` or `1.0.0` format
 * Git is installed and current directory is under version control

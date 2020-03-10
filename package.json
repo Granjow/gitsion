@@ -1,6 +1,6 @@
 {
   "name": "gitsion",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Extract a semantic version number from a git repository’s HEAD",
   "main": "dist/src/index.js",
   "bin": {

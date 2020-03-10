@@ -1,4 +1,4 @@
-# gitsemver
+# gitsion
 
 Get a version number for the current commit aka. `HEAD`.
 

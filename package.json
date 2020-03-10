@@ -1,10 +1,10 @@
 {
-  "name": "gitsemver",
+  "name": "gitsion",
   "version": "0.9.0",
   "description": "Extract a semantic version number from a git repository’s HEAD",
   "main": "dist/src/index.js",
   "bin": {
-    "gitsemver": "dist/src/index.js"
+    "gitsion": "dist/src/index.js"
   },
   "files": [
     "dist/src",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Granjow/gitsemver.git"
+    "url": "https://github.com/Granjow/gitsion.git"
   },
   "keywords": [
     "git",
@@ -27,9 +27,9 @@
   "author": "Simon A. Eugster",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Granjow/gitsemver/issues"
+    "url": "https://github.com/Granjow/gitsion/issues"
   },
-  "homepage": "https://github.com/Granjow/gitsemver#readme",
+  "homepage": "https://github.com/Granjow/gitsion#readme",
   "devDependencies": {
     "@types/jasmine": "^3.5.8",
     "@types/node": "^13.9.0",

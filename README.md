@@ -22,7 +22,15 @@ o Commit with tag v1.0.0
 |
 o Commit without tag
   → 0.0.0-0000-b83b15e
+```
 
+## Example CI/CD usage
+
+When publishing, set the npm version beforehand:
+
+```bash
+npm version --no-git-tag-version --allow-same-version $(node_modules/.bin/gitsion)
+npm publish
 ```
 
 [semver]: https://semver.org/

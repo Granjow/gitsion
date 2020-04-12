@@ -33,4 +33,12 @@ npm version --no-git-tag-version --allow-same-version $(node_modules/.bin/gitsio
 npm publish
 ```
 
+
+## Changelog
+
+### [v0.10.3] – 2020-04-12
+
+* Update minimist dependency due to vulnerability
+
+
 [semver]: https://semver.org/

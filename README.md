@@ -36,6 +36,10 @@ npm publish
 
 ## Changelog
 
+### [v0.10.4] – 2020-07-20
+
+* Update dependencies
+
 ### [v0.10.3] – 2020-04-12
 
 * Update minimist dependency due to vulnerability
